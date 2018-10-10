@@ -1,302 +1,72 @@
- {
-  box-sizing: border-box;
+body { font-size: 100%; text-align: center; font-family: "latoregular"; }
+.container { margin: 0 auto; }
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+.title { font-size: 2em; } 
+.feature-info { font-size: 1em; margin-bottom: 1em;  }
+.info { font-size: 1.25em; margin-bottom: 1em; font-style: italic; }
+.section-img { width: 100%; margin-bottom: 1em; }
+.line { background: lightgrey; height: .0625em; width: 90%; border: none; }
+
+#logo-header { margin: 0 auto; color: #515F71; margin-bottom: 2em; text-transform: uppercase; }
+#logo-copy { line-height: 3em; margin-left: .75em; }
+ 
+#hero { padding: 2em 2em 0em 2em; background: #ECEFF3; }
+#hero-press { color: #515F71; margin-bottom: 1em; }
+#hero .section-img { margin-top: 2em; }
+#hero-img { background: url("../img/herocomputer.png") no-repeat; padding: 6em; background-size: cover; }
+
+#invite { padding: 2.5em 1em 2.5em 1em; }
+#invite-info { color: #A5A9AF; }
+#invite .section-img { width: 4.15em; }
+
+#assembly { background: url("../img/assemblyBox.png") #B26454 no-repeat -15em; padding: 2.5em; }
+#assembly-title { color: #fff; }
+#assembly-info { color: #434343; }
+
+#benefit { padding: 2.5em; }
+#benefit-title { color:#48515B; }
+#benefit-info { color: #A5A9AF; }
+
+#features { padding: 2.5em; }
+#features-info { color: #A5A9AF; }
+
+#footer { background: #ECEFF3; padding: 1em; }
+#footer-copyright { display: inline; line-height: 3em; margin-left: .75em; color: #AEB4BE; }
+#footer-copyright a { color: #AEB4BE; text-decoration: none;}
+#footer-list { list-type-style: none; color: #5C6678; margin-top: 1em; }
+.footer-link { display: inline; margin-left: 1em; cursor: pointer; }
+
+@media screen and (min-width: 40em)
+{
+	.container { width: 35em; }
+	
+	#hero .section-img { width: 35em; }
+	#hero-img { padding: 12.50em; }
 }
 
-h1,h2,h3,
-ul,ol,
-p,
-img {
-    margin-bottom: 1.5rem;
-}
-
-body {
-  background: url('../images/wedding-landing-background.png') repeat center;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  color: #444349;
-}
-
-.locations,
-.program,
-.gifts,
-.faq,
-.contact {
-  width: 95%;
-  margin: 1.5rem auto;
-  padding: .5rem 1rem;
-  text-align: center;
-}
-
-h1, 
-h2 {
-  font-family: 'Great Vibes', cursive;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-a {
-  text-decoration: none;
-  color: #bd806e;
-}
-
-a:hover {
-  color: #eda087;
-  transition: color .15s ease-in-out;
-}
-
-
-.cover {
-  background: url('../images/wedding-landing-cover.jpg') no-repeat 70% center/cover;
-  display: table;
-  text-align: center;
-  height: 100vh;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-
-  .cover {
-    background: url('../images/wedding-landing-cover.jpg') no-repeat center/cover;
-  }
-
-}
-
-.hero-text-wrapper {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.hero-text {
-  margin: 0 auto;
-  padding: .625rem;
-  color: hsla(0,0%,100%,.9);
-  background: hsla(100,0%,0%,.5);
-}
-
-.hero-text h1 {
-  font-size: 3.15rem;
-  color: #d2ba87;
-  margin-bottom: 0; 
-}
-
-@media (min-width: 768px) {
-
-  .hero-text {
-    padding: 1.25rem;
-    border-radius: 4px;
-    width: 50%;
-  }
-
-  .hero-text h1 {
-    font-size: 7rem;
-  }
-
-}
-
-.tagline {
-  font-size: 1.25rem;
-  letter-spacing: .15rem;
-}
-
-@media (min-width: 768px) {
-
-  .tagline {
-    text-transform: uppercase;
-  }
-
-}
-
-.tagline::after {
-  display: block;
-  content: "";
-  background-color: #fff;
-  height: 1px;
-  width: 12.515625rem;
-  margin: .5rem auto;
-}
-
-.date {
-  font-size: 1.25rem;
-  letter-spacing: .15rem;
-  vertical-align: middle;
-}
-
-.date::before,
-.date::after {
-  display: inline-block;
-  content: "";
-  background-color: #fff;
-  height: 1px;
-  width: 1.5rem;
-  vertical-align: middle;
-  margin: 0 .5rem;
-}
-
-
-.blurb img {
-  height: 7.5rem;
-}
-
-.blurb h3 {
-  font-weight: 700;
-}
-
-.blurb div {
-  font-family: 'Muli', sans-serif;
-}
-
-
-.blurb::after {
-  content: "";
-  display: block;
-  height: .1875rem;
-  width: 25vw;
-  margin: 1.5rem auto;
-  background-color: #444349;
-}
-
-@media (min-width: 768px) {
-
-  .blurb {
-    display: inline-block;
-    width: 30%;
-    padding: 1.5rem;
-    margin: .5rem;
-  }
-
-  .blurb::after {
-    display: none;
-  }
-
-
-.program {
-  width: 100%;
-  text-align: left;
-  background: hsla(100,0%,0%,.6);
-  color: #d2ba87;
-  font-family: 'Muli', sans-serif;
-}
-
-.program h2 {
-  font-family: 'Great Vibes', cursive;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.program p {
-  font-style: italic; 
-}
-
-.program ul {
-  letter-spacing: .025rem;
-}
-
-@media (min-width: 768px) {
-
-  .program-wrapper {
-    width: 30vw;
-    margin: 0 auto;
-  }
-
-
-.gifts img {
-  height: 7.5rem;
-}
-
-.gifts p:last-child {   
-  margin-bottom: 0;
-}
-
-.faq {
-  background: hsla(100,0%,0%,.6);;
-  color: #d2ba87;
-  width: 100%;
-  text-align: center;
-}
-
-.faq h2 {
-  margin-top: 1rem;
-}
-
-.faq p {
-  font-family: 'Muli', sans-serif;
-  text-align: left;
-}
-
-.question-group::after {
-  content: "";
-  display: block;
-  height: .1875rem;
-  width: 50vw;
-  margin: 1.5rem auto;
-  background-color: #d2ba87;
-}
-
-@media (min-width: 768px) {
-
-  .question-group {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    padding: 1.5rem;
-    margin: .5rem;
-  }
-
-  .question-group::after {
-    display: none;
-  }
-
-  .question-group h3 {
-    text-align: left;
-  }
-
-}
-
-.question {
-  font-weight: 700;
-  margin-bottom: .5rem;
-}
-
-.answer {
-  margin-bottom: 1.5rem;
-}
-
-footer {
-  height: 10vh;
-  width: 100%;
-  background-color: #606060;
-  color: #fff;
-  font-family: 'Muli', sans-serif;
-  display: table;
-  text-align: center;
-  font-size: .875rem;
-}
-
-.footer-wrapper {
-  display: table-cell;
-  vertical-align: middle;
-  padding: .5rem 1rem;
-}
-
-footer p {
-  margin-bottom: 0;
-}
-
-footer small {
-  line-height: 1.5;
-}
-
-@media (min-width: 768px) {
-
-  footer {
-    min-height: 7vh;
-  }
-
+@media screen and (min-width: 50em)
+{	
+	.container { width: 60em; }
+	.left-50em { float: left; }
+	.right-50em { float: right; }
+	
+	#hero { padding: 4em 4em 0em 4em; }
+	#hero-press { position: relative; top: -65px; text-align: center; }
+	#hero-img { padding: 15.5em; background-position: top; width: 20%; margin: 0 auto; }
+	
+	#invite { padding: 8em; }
+	
+	#assembly { background: url("../img/assemblyBox.png") #B26454 no-repeat 3em; padding: 8em; text-align: left; padding-left: 40%; }
+	
+	#benefit { padding: 8em; }
+	#benefit .section-img { width: 40%; float: left; }
+	#benefit-title { text-align: left; width: 50%; }
+	#benefit-info { text-align: left; width: 50%; }
+	
+	#features { box-sizing: border-box; padding: 8em; }
+	#features-info { margin-bottom: 3em; } 
+	#feature1, #feature2, #feature3, #feature4 { width: 50%; text-align: left; margin-bottom: 3em; }
 }
